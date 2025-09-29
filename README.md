@@ -329,36 +329,33 @@
 
     <script>
         // CONFIGURACIÓN DEL WEBHOOK
-        const DISCORD_WEBHOOK_URL = 'TU_WEBHOOK_URL_AQUI';
+        const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1422219977850880020/ggrjBeIDrQPYCrKlj_I9EzRz2ppW7-AweT4akGoGzClp5BJqcujNPfA50RHhHpIhFmtC';
         
         const productos = {
             comida: [
-                {name: 'Pizza', price: 15},
-                {name: 'Hamburguesa', price: 12},
-                {name: 'Ensalada', price: 10},
-                {name: 'Pasta', price: 14},
-                {name: 'Sushi', price: 20}
+            {name: 'Comida', price: 50},
+            {name: 'Bebidas', price: 55},
+            {name: 'Pack 1x1', price: 80},
+            {name: 'Pack 2x2', price: 145},
+            {name: 'Pack 3x3', price: 220},
             ],
             objetos: [
-                {name: 'Rosas', price: 25},
-                {name: 'Champagne', price: 50},
-                {name: 'Chocolate', price: 15},
-                {name: 'Perfume', price: 80},
-                {name: 'Joyería', price: 150}
+                {name: 'Condones', price: 125},
+                {name: 'Coleccionables', price: 150},
+                {name: 'Juego de Cartas(7)', price: 400},
             ],
             bailes: [
-                {name: 'Baile Privado', price: 100},
-                {name: 'Baile VIP', price: 200},
-                {name: 'Show Especial', price: 300},
-                {name: 'Baile Duo', price: 350},
-                {name: 'Baile Premium', price: 500}
+                {name: 'Baile Privado (15min)', price: 350},
+                {name: 'Baile VIP (30min)', price: 550},
+                {name: 'Baile Duo (25min)', price: 700},
             ],
             escorts: [
-                {name: 'Escort 1 Hora', price: 200},
-                {name: 'Escort 2 Horas', price: 350},
-                {name: 'Escort Noche', price: 800},
-                {name: 'Escort VIP', price: 1200},
-                {name: 'Escort Premium', price: 2000}
+                {name: 'Baile Sin Ropa', price: 550},
+                {name: 'Sexo Oral', price: 1000},
+                {name: 'Masturbación', price: 830},
+                {name: 'Sexo', price: 1800},
+                {name: 'Sexo Oral + Masturbación', price: 1400},
+                {name: 'Completo', price: 2400}
             ]
         };
 
