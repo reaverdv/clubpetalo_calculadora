@@ -102,7 +102,7 @@
             font-weight: bold;
             color: white;
             transition: all 0.3s;
-            min-width: 120px;
+            min-width: 220px;
         }
 
         .tab:hover {
@@ -295,12 +295,14 @@
             <button class="tab" onclick="switchTab('objetos')">🎁 Objetos</button>
             <button class="tab" onclick="switchTab('bailes')">💃 Bailes</button>
             <button class="tab" onclick="switchTab('escorts')">👥 Escorts</button>
+            <button class="tab" onclick="switchTab('habitaciones')">🏡 Habitaciones</button>
         </div>
 
         <div id="comida" class="tab-content active"></div>
         <div id="objetos" class="tab-content"></div>
         <div id="bailes" class="tab-content"></div>
         <div id="escorts" class="tab-content"></div>
+        <div id="habitaciones" class="tab-content"></div>
 
         <div class="total-section">
             <div class="total-row">
@@ -356,6 +358,14 @@
                 {name: 'Sexo', price: 1800},
                 {name: 'Sexo Oral + Masturbación', price: 1400},
                 {name: 'Completo', price: 2400}
+            ],
+            habitaciones: [
+                {name: 'Habitación Roja (30min)', price: 5000},
+                {name: 'Habitación Casino (30min)', price: 2500},
+                {name: 'Habitación Pequeña (30min)', price: 1500},
+                {name: 'Habitación Roja (60min)', price: 8000},
+                {name: 'Habitación Casino (60min)', price: 3500},
+                {name: 'Habitación Pequeña (60min)', price: 2500},
             ]
         };
 
