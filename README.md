@@ -12,7 +12,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #ffdde1 100%);
+            background: radial-gradient(circle at 30% 30%, #1b1b1b, #1b1b1b);
             min-height: 100vh;
             padding: 20px;
             overflow-x: hidden;
@@ -22,7 +22,7 @@
             position: fixed;
             width: 20px;
             height: 20px;
-            background: radial-gradient(circle at 30% 30%, #ffb3d9, #ff69b4);
+            background: radial-gradient(circle at 30% 30%, #111111, #111111);
             border-radius: 50% 0 50% 0;
             opacity: 0.7;
             pointer-events: none;
@@ -43,9 +43,10 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgb(20, 20, 20);
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(255, 105, 180, 0.3);
+            border: 1px solid #707070;
+            box-shadow: 0 0 20px rgba(23, 23, 23, 0.773);
             padding: 30px;
             position: relative;
             z-index: 1;
@@ -53,10 +54,10 @@
 
         h1 {
             text-align: center;
-            color: #ff1493;
+            color: #ffffff;
             font-size: 2.5em;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.3);
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
         }
 
         .worker-section {
@@ -65,14 +66,14 @@
         }
 
         .worker-section label {
-            color: #ff1493;
+            color: #ffffff;
             font-weight: bold;
             margin-right: 10px;
         }
 
         .worker-section input {
             padding: 10px 15px;
-            border: 2px solid #ffb3d9;
+            border: 2px solid #000000;
             border-radius: 10px;
             font-size: 1em;
             width: 250px;
@@ -81,7 +82,7 @@
         }
 
         .worker-section input:focus {
-            border-color: #ff1493;
+            border-color: #000000;
         }
 
         .tabs {
@@ -94,25 +95,27 @@
         .tab {
             flex: 1;
             padding: 15px;
-            background: linear-gradient(135deg, #ffb3d9, #ff69b4);
-            border: none;
+            background: linear-gradient(135deg, #ffffffe3, #ffffffe3);
+            border: 2px solid #ffffffe3;
             border-radius: 10px;
             cursor: pointer;
             font-size: 1em;
             font-weight: bold;
-            color: white;
+            color: black;
             transition: all 0.3s;
             min-width: 220px;
         }
 
         .tab:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+            box-shadow: 0 5px 15px rgba(16, 15, 15, 0.4);
         }
 
         .tab.active {
-            background: linear-gradient(135deg, #ff1493, #ff69b4);
-            box-shadow: 0 5px 15px rgba(255, 20, 147, 0.4);
+            color: white;
+            background: linear-gradient(135deg, #2fa921e3, #2fa921e3);
+            box-shadow: 0 5px 15px rgba(59, 255, 20, 0.4);
+            border: 2px solid #2fa9218d;
         }
 
         .tab-content {
@@ -135,7 +138,7 @@
             gap: 15px;
             align-items: center;
             padding: 15px;
-            background: linear-gradient(135deg, #fff0f5, #ffe4e9);
+            background: linear-gradient(135deg, #ffffff, #ffffff);
             border-radius: 10px;
             margin-bottom: 10px;
             transition: all 0.3s;
@@ -143,7 +146,7 @@
 
         .product:hover {
             transform: translateX(5px);
-            box-shadow: 0 3px 10px rgba(255, 105, 180, 0.2);
+            box-shadow: 0 3px 10px rgba(11, 11, 11, 0.2);
         }
 
         .product input[type="checkbox"] {
@@ -154,18 +157,18 @@
 
         .product-name {
             font-weight: bold;
-            color: #ff1493;
+            color: #000000;
         }
 
         .product-price {
-            color: #ff69b4;
+            color: #33ff21;
             font-weight: bold;
         }
 
         .product input[type="number"] {
             width: 80px;
             padding: 8px;
-            border: 2px solid #ffb3d9;
+            border: 2px solid #000000;
             border-radius: 8px;
             text-align: center;
             font-weight: bold;
@@ -174,7 +177,10 @@
         .total-section {
             margin-top: 30px;
             padding: 20px;
-            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            background: rgb(20, 20, 20);
+            border-radius: 20px;
+            border: 1px solid #707070;
+            box-shadow: 0 0 20px rgba(23, 23, 23, 0.773);
             border-radius: 15px;
             color: white;
         }
@@ -198,7 +204,7 @@
         .discount-btn {
             padding: 10px 15px;
             background: white;
-            color: #ff1493;
+            color: #111111;
             border: 2px solid white;
             border-radius: 8px;
             cursor: pointer;
@@ -207,13 +213,13 @@
         }
 
         .discount-btn:hover {
-            background: #ffb3d9;
+            background: #b7ffb3;
             transform: scale(1.05);
         }
 
         .discount-btn.active {
-            background: #ffd700;
-            color: #ff1493;
+            background: #1aff00;
+            color: #ffffff;
         }
 
         .custom-discount {
@@ -234,12 +240,12 @@
         .save-btn {
             width: 100%;
             padding: 15px;
-            background: linear-gradient(135deg, #ffd700, #ffed4e);
-            border: none;
+            background: linear-gradient(135deg, #1aff003e, #1aff003e);
+            border: 1px solid #1aff00;
             border-radius: 10px;
             font-size: 1.2em;
             font-weight: bold;
-            color: #ff1493;
+            color: #ffffff;
             cursor: pointer;
             transition: all 0.3s;
             margin-top: 15px;
@@ -247,7 +253,7 @@
 
         .save-btn:hover {
             transform: scale(1.02);
-            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.5);
+            background: linear-gradient(135deg, #1aff00b8, #1aff00b8);
         }
 
         .notification {
