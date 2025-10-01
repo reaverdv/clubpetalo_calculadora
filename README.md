@@ -353,7 +353,7 @@
                 {name: 'Juego de Cartas(7)', price: 400},
             ],
             bailes: [
-                {name: 'El 50& de todos los bailes será para las bailarinas a final de semana', price: 0},
+                {name: 'EL 50% ES PARA LA BAILARINA', price: 0},
                 {name: 'Baile Privado (15min)', price: 350},
                 {name: 'Baile Privado (15min)', price: 450},
                 {name: 'Baile Privado (15min)', price: 550},
@@ -395,7 +395,7 @@
                 {name: 'Baile Duo (25min)', price: 2100},
             ],
             escorts: [
-            {name: 'El tiempo es el que la Escort quiera y el 70% es para ella.', price: 550},
+            {name: 'EL TIEMPO LO ELIGE LA ESCORT Y EL 70% ES PARA LA ESCORT', price: 0},
                  {name: 'Baile Sin Ropa', price: 550},
                 {name: 'Sexo Oral', price: 1000},
                 {name: 'Masturbación', price: 830},
